@@ -24,6 +24,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/data', (req, res) => {
+    console.log('in datat route')
     function respond (){
         if (dataComplete) {
             console.log(typeof data, 'data')
